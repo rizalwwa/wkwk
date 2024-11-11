@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Angka</title>
+    <script>
+        function tampilkanPesan() {
+            let option = prompt("Silahkan pilih: ketik 1 atau 2");
+            if (option == 1) {
+                document.getElementById("output").innerText = "Kamu cantik deh";
+            } else if (option == 2) {
+                document.getElementById("output").innerText = "Kamu tetap cantik pake banget";
+            } else {
+                document.getElementById("output").innerText = "Pilihan tidak valid";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Mba Azizah</h1>
+    <p>Coba tekan tombol di bawah ini:</p>
+    <button onclick="tampilkanPesan()">Tekan di sini</button>
+    <p id="output"></p>
+</body>
+</html>
